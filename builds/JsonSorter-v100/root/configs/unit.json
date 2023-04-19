@@ -1,0 +1,95 @@
+{
+    "object_type": "unit",
+    "unique_field": "max_health",
+    "nodes_order":[
+        "base_spec",
+
+        "unit_name",
+        "si_name",
+
+        "display_name",
+        "description",
+
+        "spawn_layers",
+
+        "max_health",
+        "wreckage_health_frac",
+
+        "build_metal_cost",
+        "atrophy_rate",
+        "atrophy_cool_down",
+
+        "buildable_types",
+
+        "factory",
+        "wait_to_rolloff_time",
+        "factory_cooldown_time",
+        "rolloff_dirs",
+        "pass_on_orders",
+        "spawn_points",
+        "store_units",
+        "hide_stored_units",
+        "buildable_projectiles",
+        "initial_build_spec",
+        "default_build_stance",
+        "deploy_projectile",
+        "hide_deploy_projectile",
+
+        "production",
+        "storage",
+        "consumption",
+
+        "energy_efficiency_requirement",
+
+        "area_build_type",
+        "area_build_separation",
+        "alt_area_build_separation",
+
+        "guard_radius",
+        "guard_layer",
+
+        "nearby_target_tick_update_interval",
+        "tools",
+        "death_weapon",
+
+        "unit_types",
+        "armor_type",
+        "command_caps",
+
+        "wreckage",
+        "inter_planetary_type",
+        "transportable",
+        "navigation",
+
+        "recon",
+
+        "physics",
+        
+        "selection_icon",
+        "strategic_icon_priority",
+
+        "model",
+        "mesh_bounds",
+        "placement_size",
+        "wreckage_mesh_bounds",
+
+        "attachable",
+
+        "TEMP_texelinfo",
+        "lod_hide_pixelsize",
+        "show_in_orbital_layer",
+
+        "death",
+        "events",
+        "audio",
+        "fx_offsets",
+
+        "lamps",
+        "headlights",
+
+
+
+
+        "alt_area_build_pattern"
+    ]
+}
