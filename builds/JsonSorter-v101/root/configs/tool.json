@@ -1,0 +1,64 @@
+{
+    "object_type": "tool",
+    "unique_field": "max_range",
+    "nodes_order":[
+        "base_spec",
+        "tool_type",
+
+        "ammo_id",
+        "max_range",
+        "rate_of_fire",
+
+        "construction_demand",
+
+        "ammo_source",
+        "ammo_demand",
+        "ammo_capacity",
+        "ammo_per_shot",
+
+        "spawn_layers",
+
+        "manual_fire",
+        "auto_reclaim",
+        "auto_repair",
+        "auto_attack",
+   
+        "auto_task_type",
+        "anti_entity_targets_units",
+        "anti_entity_targets",
+
+        "no_busy_auto_attack",
+        "can_only_assist_with_buildable_items",
+
+        "self_destruct",
+
+        "spread_fire",
+        "carpet_fire",
+        "carpet_wait_for_full_ammo",
+
+        "firing_standard_deviation",
+
+        "arc_type",
+        "max_firing_velocity",
+        "min_firing_velocity",
+
+        "yaw_rate",
+        "pitch_rate",
+
+        "yaw_range",
+        "pitch_range",
+
+        "firing_arc_yaw",
+        "firing_arc_pitch",
+
+        "idle_aim_delay",
+
+        "height_range",
+
+        "assist_layers",
+        "target_layers",
+        "exclude_unit_types",
+        "target_priorities",
+        "reclaim_types"
+    ]
+}
