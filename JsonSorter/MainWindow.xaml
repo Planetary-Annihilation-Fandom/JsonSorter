@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JsonSorter"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="JsonSorter.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="Window"
+        DataContext="{Binding ElementName=Window}" MaxWidth="800" MaxHeight="450" MinWidth="800" MinHeight="450"
+        >
+    <Grid>
+
+        <syncfusion:ButtonAdv x:Name="SortButton" Content="ButtonAdv" Height="36" Label="Sort" Margin="0,102,10,0" VerticalAlignment="Top" IsMultiLine="False" FontFamily="Sansation" Click="SortClick" HorizontalAlignment="Right" Width="128"/>
+        <syncfusion:SfTextBoxExt x:Name="SourceFolderTextBox" Margin="141,59,10,0" TextWrapping="Wrap"  Text="{Binding Path=SourceFolder.Path,Mode=OneWay, TargetNullValue='Select source folder'}" Watermark="Enter a Value" Focusable="False" FontFamily="Sansation" TextAlignment="Center" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal" CharacterCasing="Normal" MaxLines="1" IsReadOnly="True" Height="25" VerticalAlignment="Top" IgnoreCase="True" SuggestionMode="None"/>
+        <syncfusion:ButtonAdv x:Name="SelectSourceFolderButton" Content="ButtonAdv" HorizontalAlignment="Left" Height="35" Label="Select source" Margin="141,102,0,0" VerticalAlignment="Top" Width="128" IsMultiLine="False" Click="SelectSourceFolderClick" FontFamily="Sansation"/>
+        <ListBox ItemsSource="{Binding Path=Configs}" Margin="10,59,698,248" FontFamily="Sansation">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="2">
+                        <TextBlock FontSize="11" Text="{Binding Path=ObjectType}" HorizontalAlignment="Center" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Loaded configs:" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="104" Height="27" FontFamily="Sansation"/>
+        <Label Content="Source folder:" HorizontalAlignment="Left" Margin="141,27,0,0" VerticalAlignment="Top" Width="104" Height="27" FontFamily="Sansation"/>
+        <syncfusion:SfLinearProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="20" Margin="366,110,0,0" Progress="{Binding Path=Progress}" VerticalAlignment="Top" Width="200" IndicatorCornerRadius="5"/>
+        <syncfusion:EditControl x:Name="MessageLogBox" BorderThickness="1" HorizontalAlignment="Left" Margin="10,203,0,0" Text="Edit Control" VerticalAlignment="Top" Height="221" Width="369" IndentingOptions="None" EnableOutlining="False" Cursor="IBeam" FontFamily="Sansation" Focusable="False" BorderBrush="Gray" FontSize="10" IsReadOnly="True" EnableIntellisense="False"/>
+
+    </Grid>
+</Window>
